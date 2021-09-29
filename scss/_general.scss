@@ -17,3 +17,7 @@ body {
   overflow-x: hidden;
   background-color: $background-color-body;
 }
+
+.main{
+  flex-grow: 1;
+}
