@@ -1,0 +1,109 @@
+.site-header{
+  top: 0;
+  position: fixed;
+  width: 100%;
+  background-color: $color-header-dark;
+}
+
+.site-header__logo{
+  width: 100%;
+  max-width: 100px;
+}
+
+.header-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 60%;
+}
+
+.header-message__wrapper{
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  background:
+  linear-gradient($color-light 0 0)
+  bottom /var(--d, 0) 3px
+  no-repeat;
+  transition:0.5s;
+
+  &:hover{
+    --d: 100%;
+  }
+}
+
+.header-message__icon{
+  width: 25px;
+  height: 23px;
+  fill: $color-light;
+}
+
+.header-message__title{
+  color: $color-light;
+  font-size: 16px;
+  list-style: 24px;
+  margin-left: 10px;
+}
+
+.header-heart__wrapper{
+  height: 50px;
+  display: flex;
+  align-items: center;
+  background:
+  linear-gradient($color-light 0 0)
+  bottom /var(--d, 0) 3px
+  no-repeat;
+  transition:0.5s;
+
+  &:hover{
+    --d: 100%;
+  }
+}
+
+.header-heart__icon{
+  width: 25px;
+  height: 23px;
+  fill: $color-light;
+  cursor: pointer;
+}
+
+.header-person__wrapper{
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  background:
+  linear-gradient($color-light 0 0)
+  bottom /var(--d, 0) 3px
+  no-repeat;
+  transition:0.5s;
+
+  &:hover{
+    --d: 100%;
+  }
+}
+
+.header-person__icon{
+  width: 25px;
+  height: 23px;
+  fill: $color-light;
+}
+
+.header-person__title{
+  color: $color-light;
+  font-size: 16px;
+  list-style: 24px;
+  margin-left: 10px;
+}
+
+.header-btn{
+  padding: 12px 21px;
+  border: 4px solid $color-light;
+  transition: 0.7s;
+  background-color: $color-light;
+  cursor: pointer;
+  &:hover{
+    color: $color-light;
+    background-color: $color-header-dark;
+    border-radius: 10px;
+  }
+}

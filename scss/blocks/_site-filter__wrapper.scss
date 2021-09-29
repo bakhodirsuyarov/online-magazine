@@ -1,0 +1,161 @@
+.site-filter__wrapper{
+  padding-top: 20px;
+}
+
+.site-filter{
+  display: flex;
+  flex-direction: column;
+}
+
+.site-filter__inner{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.site-filter__checkbox{
+  margin-right: 10px;
+}
+
+.site-filter__label{
+  font-size: 15px;
+  list-style: 2px;
+}
+
+.site-filter__label:not(:last-child){
+  margin-right: 20px;
+}
+
+.site-filter__select-rukn{
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+}
+
+.rukn-label{
+  font-size: 14px;
+  line-height: 2;
+  margin-bottom: 6px;
+}
+
+.rukn-select{
+  padding: 10px 0;
+  border: none;
+  outline: none;
+  margin-right: 20px;
+  width: 190px;
+}
+
+.site-filter__select-category{
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+}
+
+.category-label{
+  font-size: 14px;
+  line-height: 2;
+  margin-bottom: 6px;
+}
+
+.category-select{
+  padding: 10px 40px 10px 10px;
+  border: none;
+  outline: none;
+  margin-right: 20px;
+}
+
+.site-filter__select-cost{
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+}
+
+.cost-label{
+  font-size: 14px;
+  line-height: 2;
+  margin-bottom: 6px;
+}
+
+.cost-select{
+  font-size: 16px;
+  padding: 10px 0;
+  border: none;
+  outline: none;
+  margin-right: 10px;
+  width: 90px;
+}
+
+.site-filter__select-room{
+  display: flex;
+  flex-direction: column;
+}
+
+.site-filter__select-box{
+  display: flex;
+  flex-direction: row;
+}
+
+.room-label{
+  font-size: 14px;
+  line-height: 2;
+  margin-bottom: 6px;
+}
+
+.room-select{
+  font-size: 16px;
+  padding: 10px ;
+  border: none;
+  outline: none;
+  margin-right: 10px;
+  width: 90px;
+}
+
+// .room-select:not(:last-child){
+//   margin-left: 70px;
+// }
+
+.site-filter__select-area{
+  display: flex;
+  flex-direction: column;
+}
+
+.area-label{
+  font-size: 14px;
+  line-height: 2;
+  margin-bottom: 6px;
+}
+
+.area-select{
+  font-size: 16px;
+  padding: 10px 0;
+  border: none;
+  outline: none;
+  margin-right: 10px;
+  width: 90px;
+}
+
+.site-filter__select-floor{
+  display: flex;
+  flex-direction: column;
+}
+
+.floor{
+  margin-top: 15px;
+}
+
+.floor-label{
+  font-size: 14px;
+  line-height: 2;
+  margin-bottom: 6px;
+}
+
+.floor-select{
+  font-size: 16px;
+  padding: 10px 0;
+  border: none;
+  outline: none;
+  margin-right: 10px;
+  width: 90px;
+}
