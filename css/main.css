@@ -353,12 +353,12 @@ html {
           box-sizing: inherit;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
   font-family: 'Roboto', sans-serif;
-  padding: 0;
-  margin: 0;
   overflow-x: hidden;
   background-color: #f2f4f5;
 }
@@ -367,6 +367,7 @@ body {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+  height: 100vh;
 }
 
 /* VISUALLY-HIDDEN */
@@ -403,11 +404,15 @@ body {
   position: fixed;
   width: 100%;
   background-color: #082032;
+  margin-bottom: 20px;
 }
 
 .site-header__logo {
   width: 100%;
+  height: 70px;
   max-width: 100px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .header-wrapper {
@@ -424,6 +429,7 @@ body {
 }
 
 .header-message__wrapper {
+  height: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -480,6 +486,7 @@ body {
 }
 
 .header-person__wrapper {
+  height: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -526,7 +533,7 @@ body {
 }
 
 .site-search__wrapper {
-  margin-top: 80px;
+  margin-top: 100px;
 }
 
 .site-search__inner {
@@ -633,6 +640,11 @@ body {
 
 .site-filter__label:not(:last-child) {
   margin-right: 20px;
+}
+
+.site-filter__title {
+  margin-top: 30px;
+  margin-bottom: 16px;
 }
 
 .site-filter__select-rukn {
