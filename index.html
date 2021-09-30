@@ -73,7 +73,7 @@
     <div class="site-search__wrapper">
       <div class="container">
         <div class="site-search__inner">
-          <input class="site-search__input" type="search" placeholder="Search...">
+          <input id="search" class="site-search__input" type="search" placeholder="Search...">
           <p class="site-search__info">Butun O'zbekiston</p>
           <div class="site-search__button-wrapper">
             <button class="site-search__button">Topish</button>
@@ -95,120 +95,72 @@
             <label class="site-filter__label" for="checkbox-two">Faqat fotosurat bilan</label>
           </div>
 
-          <h2 class="site-filter__title">Filter</h2>
-          <div class="site-filter__inner">
-            <div class="site-filter__select-rukn rukn">
-              <label class="rukn-label" for="select-kvartira">Rukn</label>
-              <select class="rukn-select" id="select-kvartira">
-                <option value="kvartiralar">Kvartiralar</option>
-                <option value="barcha ruknlar">Barcha ruknlar</option>
-                <option value="bolalar dunyosi">Bolalar dunyosi</option>
-                <option value="ko'chmas mulk">Ko'chmas mulk</option>
-                <option value="transport">Transport</option>
-                <option value="ish">Ish</option>
-              </select>
-            </div>
-            <div class="site-filter__select-category category">
-              <label class="category-label" for="select-category">Ruknni tanlang</label>
-              <select class="category-select" id="select-kvartira">
-                <option value="hammasi">Hammasi</option>
-                <option value="ijaraga uzoq muddatga">Ijaraga uzoq muddatga</option>
-                <option value="ijara sutkalik">ijara sutkalik</option>
-                <option value="sotish">Sotish</option>
-                <option value="ayirboshlash">Ayirboshlash</option>
-              </select>
-            </div>
-            <div class="site-filter__select-cost cost">
-              <label class="cost-label" for="cost">Narx</label>
-             <div class="site-filter__select-box">
-              <select class="cost-select" id="cost">
-                <option value="">dan</option>
-                <option value="1000">1000 so'm</option>
-                <option value="5000">5000 so'm</option>
-                <option value="20000">20000 so'm</option>
-                <option value="50000">50000 so'm</option>
-                <option value="100000">100000 so'm</option>
-              </select>
-              <select class="cost-select" id="cost">
-                <option value="">...</option>
-                <option value="1000">1000 so'm</option>
-                <option value="5000">5000 so'm</option>
-                <option value="20000">20000 so'm</option>
-                <option value="50000">50000 so'm</option>
-                <option value="100000">100000 so'm</option>
-              </select>
-             </div>
-            </div>
-            <div class="site-filter__select-room room">
-              <label class="room-label" for="room">Xonalar soni</label>
-              <div class="room-box">
-                <select class="room-select" id="room">
-                  <option value="">dan</option>
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-                  <option value="5">5</option>
-                </select>
-                <select class="room-select" id="room">
-                  <option value="">...</option>
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-                  <option value="5">5</option>
+          <h2>Filter</h2>
+          <form id="filter__form">
+            <div class="site-filter__inner">
+              <div class="site-filter__select-rukn rukn">
+                <label class="rukn-label" for="select-kvartira">Rukn</label>
+                <select class="rukn-select" id="select-kvartira">
+                  <option selected value=""  disabled>Kvartiralar</option>
+                  <option value="barcha ruknlar">Barcha ruknlar</option>
+                  <option value="bolalar dunyosi">Bolalar dunyosi</option>
+                  <option value="ko'chmas mulk">Ko'chmas mulk</option>
+                  <option value="transport">Transport</option>
+                  <option value="ish">Ish</option>
                 </select>
               </div>
-            </div>
-            <div class="site-filter__select-area area">
-              <label class="area-label" for="area">Umumiy maydan</label>
-              <div class="area-box">
-                <select class="area-select" id="area">
-                  <option value="">dan</option>
-                  <option value="20">20 m</option>
-                  <option value="50">50 m</option>
-                  <option value="70">270 m</option>
-                  <option value="100">100 m</option>
-                  <option value="150">150 m</option>
-                </select>
-                <select class="area-select" id="area">
-                  <option value="">...</option>
-                  <option value="20">20 m</option>
-                  <option value="50">50 m</option>
-                  <option value="70">270 m</option>
-                  <option value="100">100 m</option>
-                  <option value="150">150 m</option>
+              <div class="site-filter__select-category category">
+                <label class="category-label" for="select-category">Ruknni tanlang</label>
+                <select class="category-select" id="select-tip">
+                  <option value="hammasi">Hammasi</option>
                 </select>
               </div>
-            </div>
-            <div class="site-filter__select-floor floor">
-              <label class="floor-label" for="floor">Qavati</label>
-              <div class="floor-box">
-                <select class="floor-select" id="floor">
-                  <option value="">dan</option>
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-                  <option value="5">5</option>
-                  <option value="6">6</option>
-                  <option value="7">7</option>
-                  <option value="8">8</option>
-                </select>
-                <select class="floor-select"  id="floor">
-                  <option value="">...</option>
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-                  <option value="5">5</option>
-                  <option value="6">6</option>
-                  <option value="7">7</option>
-                  <option value="8">8</option>
-                </select>
+              <div class="site-filter__select-cost cost">
+                <label class="cost-label" for="cost">Narx</label>
+                <div class="site-filter__select-box">
+                  <select class="cost-select" id="cost">
+                    <option value="">dan</option>
+                  </select>
+                  <select class="cost-select" id="cost">
+                    <option value="">...</option>
+                  </select>
+                </div>
+              </div>
+              <div class="site-filter__select-room room">
+                <label class="room-label" for="room">Xonalar soni</label>
+                <div class="room-box">
+                  <select class="room-select" id="room">
+                    <option value="">dan</option>
+                  </select>
+                  <select class="room-select" id="room">
+                    <option value="">...</option>
+                  </select>
+                </div>
+              </div>
+              <div class="site-filter__select-area area">
+                <label class="area-label" for="area">Umumiy maydan</label>
+                <div class="area-box">
+                  <select class="area-select" id="area">
+                    <option value="">dan</option>
+                  </select>
+                  <select class="area-select" id="area">
+                    <option value="">...</option>
+                  </select>
+                </div>
+              </div>
+              <div class="site-filter__select-floor floor">
+                <label class="floor-label" for="floor">Qavati</label>
+                <div class="floor-box">
+                  <select class="floor-select" id="floor">
+                    <option value="">dan</option>
+                  </select>
+                  <select class="floor-select"  id="floor">
+                    <option value="">...</option>
+                  </select>
+                </div>
               </div>
             </div>
-          </div>
+          </form>
         </div>
       </div>
     </div>
@@ -231,25 +183,31 @@
 
 
 
-    <li class="card">
-      <div class="container">
-          <div class="card-img__wrapper">
-            <img class="card-img" src="https://picsum.photos/180/156" alt="img" width="180" height="156">
-            <div class="card-info__wrapper">
-              <h2 class="card-title">
-              Oilalilarga berramz
-              </h2>
-              <p class="card-date">Olot-27 sent</p>
+    <div class="container">
+      <ul class="card__list">
+        <template id="template">
+          <li class="card">
+            <div class="card-img__wrapper">
+              <img class="card-img" src="https://picsum.photos/180/156" alt="img" width="180" height="156">
+              <div class="card-info__wrapper">
+                <h2 class="card-title">Oilalilarga berramz</h2>
+                <p class="card-date">Olot-27 sent</p>
+              </div>
             </div>
-          </div>
-          <div class="card-cost__wrapper">
-            <p class="card-cost">150000 so'm</p>
-            <button class="card-button">press</button>
-          </div>
-      </div>
-    </li>
+            <div class="card-cost__wrapper">
+              <p class="card-cost">150000 so'm</p>
+              <button class="card-button">
+                <svg class="icon-heart card-button--btn">
+                  <use xlink:href="#heart-solid"></use>
+                </svg>
+              </button>
+            </div>
+          </li>
+        </template>
+      </ul>
+    </div>
   </main>
-                  
+
   <footer>
     <div class="container">
       <div class="site-footer__section first-section">
@@ -258,11 +216,11 @@
     </div>
   </footer>
 
-<!--
-  <template id="template">
-  </template> -->
-
-  <script src="./js/homes.js"></script>
-  <script src="./js/main.js"></script>
-</body>
-</html>
+  <!--
+    <template id="template">
+    </template> -->
+    <script src="./js/util.js"></script>
+    <script src="./js/homes.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+  </html>

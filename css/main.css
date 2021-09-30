@@ -363,13 +363,6 @@ body {
   background-color: #f2f4f5;
 }
 
-.main {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  height: 100vh;
-}
-
 /* VISUALLY-HIDDEN */
 .visually-hidden {
   position: absolute;
@@ -400,19 +393,17 @@ body {
 }
 
 .site-header {
+  padding: 10px 0;
   top: 0;
   position: fixed;
   width: 100%;
   background-color: #082032;
-  margin-bottom: 20px;
 }
 
 .site-header__logo {
   width: 100%;
-  height: 70px;
   max-width: 100px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  height: 70px;
 }
 
 .header-wrapper {
@@ -429,7 +420,6 @@ body {
 }
 
 .header-message__wrapper {
-  height: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -486,7 +476,6 @@ body {
 }
 
 .header-person__wrapper {
-  height: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -533,7 +522,7 @@ body {
 }
 
 .site-search__wrapper {
-  margin-top: 100px;
+  margin-top: 80px;
 }
 
 .site-search__inner {
@@ -555,6 +544,8 @@ body {
   border: none;
   background-color: transparent;
   outline: none;
+  height: 40px;
+  padding-left: 10px;
   font-size: 16px;
 }
 
@@ -640,11 +631,6 @@ body {
 
 .site-filter__label:not(:last-child) {
   margin-right: 20px;
-}
-
-.site-filter__title {
-  margin-top: 30px;
-  margin-bottom: 16px;
 }
 
 .site-filter__select-rukn {
@@ -842,6 +828,7 @@ body {
   background-image: url(../../img/ic-layout-sections.svg);
   background-repeat: no-repeat;
   margin-left: 15px;
+  cursor: pointer;
 }
 
 .grid__grid-btn {
@@ -852,6 +839,7 @@ body {
   background-image: url(../../img/ic-layout-square-grid.svg);
   background-repeat: no-repeat;
   margin-left: 10px;
+  cursor: pointer;
 }
 
 body {
@@ -975,17 +963,64 @@ body {
   }
 }
 
-.card {
-  list-style: none;
+.card__list {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.card-inner {
+.card {
+  width: 260px;
+  height: 350px;
+  list-style: none;
+  margin-bottom: 15px;
   background-color: white;
-  padding: 10px 15px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  padding: 10px 15px 25px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.card:hover {
+  -webkit-box-shadow: 0 0 2px 2px #ccc;
+          box-shadow: 0 0 2px 2px #ccc;
+}
+
+.card-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.card-button--btn {
+  width: 20px;
+  height: 20px;
+  fill: #000;
+}
+
+.card-button--active .card-button--btn {
+  fill: RED;
 }
 
 .card-img {
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
   padding-bottom: 15px;
 }
 
@@ -1019,25 +1054,35 @@ body {
   margin: 0;
 }
 
-.card-inner--active {
+.card-active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   background-color: white;
   width: 830px;
+  height: 168px;
   padding: 8px;
+  -webkit-transition: 1s;
+  transition: 1s;
+  margin-bottom: 15px;
 }
 
-.card-inner--active .card-img {
+.card-active .card-img {
   width: 216px;
-  height: 152px;
-  padding-right: 10px;
+  height: 155px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding: 0 15px 0 0;
 }
 
-.card-inner--active .card-info__wrapper {
+.card-active .card-info__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1051,7 +1096,7 @@ body {
   padding-top: 10px;
 }
 
-.card-inner--active .card-img__wrapper {
+.card-active .card-img__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1060,7 +1105,7 @@ body {
           justify-content: space-between;
 }
 
-.card-inner--active .card-cost__wrapper {
+.card-active .card-cost__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1070,11 +1115,11 @@ body {
           flex-direction: column;
 }
 
-.card-inner--active .card-cost {
+.card-active .card-cost {
   padding: 10px 10px;
 }
 
-.card-inner--active .card-button {
+.card-active .card-button {
   margin-bottom: 10px;
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,5 +1,5 @@
 .site-search__wrapper{
-  margin-top: 100px;
+  margin-top: 80px;
 }
 
 .site-search__inner{
@@ -15,16 +15,14 @@
   border: none;
   background-color: transparent;
   outline: none;
+  height: 40px;
+  padding-left: 10px;
   font-size: 16px;
 }
 
 .site-search__info{
   font-size: 16px;
 }
-
-
-
-
 
 .site-search__button-wrapper{
   display: flex;

@@ -1,0 +1,26 @@
+.site-footer{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.first-section{
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  margin-bottom: 40px;
+}
+
+.first-section__bulim{
+  margin-right: 40px;
+}
+
+.second-section{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.second-section__list{
+  list-style: none;
+}

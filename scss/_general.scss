@@ -12,13 +12,8 @@ html {
   padding: 0;
 }
 
-body {
+body{
   font-family: 'Roboto', sans-serif;
   overflow-x: hidden;
   background-color: $background-color-body;
-}
-
-.main{
-  flex-grow: 1;
-  height: 100vh;
 }

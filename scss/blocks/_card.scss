@@ -1,14 +1,46 @@
+.card__list{
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 .card{
+  width: 260px;
+  height: 350px;
   list-style: none;
+  margin-bottom: 15px;
+  background-color: $color-light;
+  transition: 0.5s;
+  padding: 10px 15px 25px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  &:hover{
+    box-shadow: 0 0 2px 2px #ccc;
+  }
 }
 
-.card-inner{
-  background-color: $color-light;
-  padding: 10px 15px;
+.card-button{
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  &--btn{
+    width: 20px;
+    height: 20px;
+    fill: #000;
+  }
+}
+// JS CLICK BUTTON ACTIVE CLASS
+.card-button--active{
+  & .card-button--btn{
+    fill: RED;
+  }
 }
 
 .card-img{
   width: 100%;
+  // max-width: 156px;
+  object-fit: cover;
   padding-bottom: 15px;
 }
 
@@ -37,16 +69,21 @@
 }
 
 
-.card-inner--active{
+.card-active{
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   background-color: $color-light;
   width: 830px;
+  height: 168px;
   padding: 8px;
+  transition: 1s;
+  margin-bottom: 15px;
   & .card-img{
     width: 216px;
-    height: 152px;
-    padding-right: 10px;
+    height: 155px;
+    object-fit: cover;
+    padding: 0 15px 0 0;
   }
   & .card-info__wrapper{
     display: flex;
